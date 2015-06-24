@@ -68,7 +68,7 @@ def draw(c):
     # update ball
     ball_pos[0] += ball_vel[0]
     ball_pos[1] += ball_vel[1]
-    #ball bounces on top and bottom walls
+    #ball bounces on walls
     if ball_pos[1] <= BALL_RADIUS or ball_pos[1] >= HEIGHT - BALL_RADIUS:
         ball_vel[1] = -ball_vel[1]*1.1
     #ball hits gutters/paddles
